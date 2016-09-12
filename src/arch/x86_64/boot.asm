@@ -1,6 +1,12 @@
 ;
-; x86_64 starts in 32-bit mode. This file checks for CPU compatability, and if
-; everything is kosher, moves into 64-bit "long" mode.
+; x86_64 starts in 32-bit mode. This file covers:
+;
+; - reserving stack and page lookup memory
+; - setting up the long-mode Global Descriptor Table
+; - checking CPU compataibility (throws an error and quits if it isn't compatible)
+; - loading the GDT and switching into 64-bit "long" mode
+;
+; The remainder of the process is covered by the long_mode_init.asm file.
 ;
 global start
 extern long_mode_start

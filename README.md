@@ -5,7 +5,8 @@ Experimenting with Rust and systems programming.
 Install rust, and build & run the OS itself:
 
 ```bash
-$ sudo apt-get install QEMU xorriso nasm
+$ sudo apt-get install QEMU xorriso nasm                    # Debian/Ubuntu
+$ sudo pacman -S xorriso nasm mtools && yaourt -S qemu-git  # Arch (problems with pacman -S qemu?)
 $ make rust
 $ make run
 ```
