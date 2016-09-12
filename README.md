@@ -5,8 +5,8 @@ Experimenting with Rust and systems programming.
 Install rust, and build & run the OS itself:
 
 ```bash
-$ sudo apt-get install QEMU xorriso nasm                    # Debian/Ubuntu
-$ sudo pacman -S xorriso nasm mtools && yaourt -S qemu-git  # Arch (problems with pacman -S qemu?)
+$ sudo apt-get install qemu xorriso nasm    # Debuntu
+$ sudo pacman -S qemu xorriso nasm mtools   # Arch
 $ make rust
 $ make run
 ```
@@ -27,6 +27,7 @@ $ make gdb
 ## Starting point
 - http://os.phil-opp.com/multiboot-kernel.html (working through this to start)
 - http://wiki.osdev.org/
+
 ### Paging
 - http://stackoverflow.com/questions/18431261/how-does-x86-paging-work
 

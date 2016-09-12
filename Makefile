@@ -45,7 +45,7 @@ rust-os-gdb/bin/rust-gdb:
 	chmod u+x build-rust-os-gdb.sh
 	./build-rust-os-gdb.sh
 
-gdb:
+gdb: rust-os-gdb/bin/rust-gdb
 	rust-os-gdb/bin/rust-gdb "build/kernel-x86_64.bin" -ex "target remote :1234"
 
 
