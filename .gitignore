@@ -1,5 +1,11 @@
+# Necessary for rust installation
 Cargo.lock
 rustup.sh
 
+# Built and debugging artefacts
 build/*
 target/*
+binutils-gdb/*
+build-binutils/*
+build-rust-os-gdb.sh
+rust-os-gdb/*

@@ -1,5 +1,6 @@
 
 mod area_frame_allocator;
+mod paging;
 
 use self::paging::PhysicalAddress;
 

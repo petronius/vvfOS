@@ -18,7 +18,7 @@ we can attach from the beginning of the start process. Build, install, and run
 with GDB attached by doing:
 
 ```bash
-$ sudo apt-get install texinfo flex bison python-dev ncurses-dev
+$ sudo apt-get install texinfo flex bison python-dev ncurses-dev    # Debuntu
 $ make gdb
 ```
 
