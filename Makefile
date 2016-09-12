@@ -35,6 +35,8 @@ rust: rustup.sh
 run: $(iso)
 	qemu-system-x86_64 -cdrom $(iso) -s
 
+rerun: clean run
+
 debug: $(iso) rust-os-gdb/bin/rust-gdb
 	qemu-system-x86_64 -cdrom $(iso) -s -S
 
